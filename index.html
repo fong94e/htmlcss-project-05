@@ -4,16 +4,927 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Font -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
     <link rel="manifest" href="./assets/favicon/site.webmanifest" />
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <!-- ================================================================== Header ================================================================ -->
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <a href="#" class="header-logo logo">
+            <img src="./assets/img/logo.svg" alt="CeloBank" />
+            <span>CeloBank</span>
+          </a>
+          <ul class="header-nav">
+            <li class="header-nav__item">
+              <a href="$" class="header-nav__link">Home</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link header-nav__link--active"
+                >Products</a
+              >
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Features</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Blog</a>
+            </li>
+          </ul>
+          <div class="header-cta">
+            <a href="#" class="btn login-btn">Login</a>
+            <button class="btn signup-btn">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- ================================================================== Hero ================================================================ -->
+
+      <section class="hero">
+        <div class="container">
+          <div class="hero-inner">
+            <div
+              class="hero-left"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+            >
+              <span class="hero-label label-top"> Digital Smart Wallet </span>
+              <h1 class="hero-heading heading--lv1">
+                Digital <strong>Payment</strong> For Everyone.
+              </h1>
+              <p class="hero-desc">
+                We bring together eveything that’s required to build websites
+                and apps that accept payments and send payouts globally. We are
+                the best platform.
+              </p>
+              <form action="" class="hero-form">
+                <div class="hero-form__row">
+                  <input
+                    type="email"
+                    name="email"
+                    id="emal"
+                    class="hero-form__input"
+                    placeholder="Your email address"
+                    ;
+                    required
+                  />
+                  <button type="submit" class="btn hero-btn" value="abc">
+                    Get Started
+                  </button>
+                </div>
+                <p class="hero-form__error">Email không hợp lệ</p>
+              </form>
+              <p class="hero-message">
+                *We’ll respect the inbox and never share your email.
+              </p>
+            </div>
+            <!-- data-aos="zoom-in"
+              data-aos-delay="50"
+              data-aos-duration="1000" -->
+            <div class="hero-right">
+              <figure>
+                <img
+                  src="./assets/img/hero-img1.png"
+                  alt="Digital Payment For Everyone."
+                  class="hero-img"
+                />
+              </figure>
+              <div class="hero-info">
+                <svg
+                  width="19"
+                  height="19"
+                  viewBox="0 0 19 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.5 10.5V18.5H18.5V10.5"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9.5 0.5V12.5M6.5 9.5L9.5 12.5L12.5 9.5"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span> Deposite <strong>$32000</strong> </span>
+              </div>
+              <div class="hero-info">
+                <span> <strong>0%</strong>Interest </span>
+              </div>
+              <div class="hero-info">
+                <svg
+                  width="20"
+                  height="26"
+                  viewBox="0 0 20 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20 2.925C13.75 2.925 11.25 1.3 10 0C8.75 1.3 6.25 2.925 0 2.925V13.325C0 16.25 1.25 21.45 10 26C18.75 21.45 20 16.25 20 13.325V2.925Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M10.6381 18.4703V19.4602C10.6381 19.758 10.396 19.9993 10.0971 19.9993C9.79381 20.0143 9.53577 19.781 9.52158 19.4788C9.52158 19.4726 9.5207 19.4664 9.5207 19.4602V18.488C8.28893 18.4483 7.11123 17.9754 6.19517 17.1535C6.06924 17.0262 5.99919 16.8548 6.00007 16.6763C5.99474 16.268 6.30956 15.9268 6.71838 15.8985C6.87977 15.902 7.03586 15.9577 7.1618 16.0576C7.83045 16.6179 8.64633 16.9759 9.51184 17.0917V13.5564C7.87122 13.1146 6.15967 12.5577 6.15967 10.5515C6.15967 8.91652 7.51648 7.68803 9.51181 7.54664V6.53912C9.51626 6.24303 9.75568 6.00443 10.0528 6C10.3516 6 10.5937 6.24128 10.5937 6.53912V7.59083C11.6162 7.64915 12.5917 8.04066 13.3694 8.70442C13.4954 8.83168 13.5654 9.00315 13.5645 9.18165C13.5601 9.59791 13.2196 9.93288 12.8019 9.93288C12.6715 9.9311 12.5456 9.89134 12.4383 9.81798C11.9 9.4079 11.2704 9.13481 10.6026 9.02256V12.1247C12.2432 12.5666 13.9991 13.2029 13.9991 15.2887C14.0345 16.8442 13.0591 18.3113 10.6381 18.4703ZM9.52067 8.95188C8.4831 9.03142 7.80026 9.62356 7.80026 10.4455C7.80026 11.2674 8.55405 11.5591 9.52067 11.8419V8.95188ZM10.6381 13.8923V17.1093C11.9505 16.9502 12.4117 16.1548 12.4117 15.4831C12.4205 14.5551 11.6402 14.1751 10.6381 13.8923Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span> <strong>$1.310</strong>SECURED FUNDS </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============================================================= How It Works =============================================================== -->
+
+      <section class="steps">
+        <div class="container">
+          <div class="steps-inner">
+            <div
+              class="steps-left"
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+            >
+              <figure>
+                <img
+                  src="./assets/img/steps1.png"
+                  alt="How It Works"
+                  class="steps-img"
+                />
+              </figure>
+              <img
+                src="./assets/img/steps-behind.png"
+                alt=""
+                class="step-background"
+              />
+              <div class="steps-card">
+                <img src="./assets/img/step-img1.png" alt="" />
+              </div>
+              <div class="steps-card">
+                <div class="steps-card__icon">
+                  <div class="steps-card__icon-wrapper">
+                    <svg
+                      width="11"
+                      height="8"
+                      viewBox="0 0 11 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.5 3.5L4 7L10.5 0.5"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="steps-card__body">
+                  <span class="steps-card__title"> Congratulations </span>
+                  <p class="steps-card__desc">Your account activated</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="steps-right"
+              data-aos="fade-up-left"
+              data-aos-duration="1000"
+            >
+              <span class="label-top steps-label"> Digital Smart Wallet </span>
+              <h2 class="steps-heading heading--lv2">How It Works</h2>
+              <ul class="steps-list">
+                <li class="steps-list__step">
+                  <h3 class="step-heading">
+                    1. Open a High Interest Checking account
+                  </h3>
+                  <p class="step-desc">
+                    Fund your bank account with a minimum balance of $100.
+                    Enroll in 3 minutes or less!
+                  </p>
+                </li>
+                <li class="steps-list__step">
+                  <h3 class="step-heading">
+                    2. 10 point-of-sale transactions each Month that are at
+                    least $10 each.
+                  </h3>
+                  <p class="step-desc">
+                    Be sure to use your rewards checking account as often as
+                    possible in order to accue APYI
+                  </p>
+                </li>
+                <li class="steps-list__step">
+                  <h3 class="step-heading">3. Receive up to 5.50% APY</h3>
+                  <p class="step-desc">
+                    The APY you earn will be based on your account balance and
+                    satisfying the transaction requirement.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============================================================= Feature =============================================================== -->
+      <section class="feature">
+        <div class="container">
+          <div class="feature-inner">
+            <div
+              class="feature-group"
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+            >
+              <span class="label-top feature-group__label">
+                Digital Smart Wallet
+              </span>
+              <h2 class="feature-group__heading heading--lv2">
+                One Card For All Your Payments
+              </h2>
+              <p class="feature-group__desc">
+                We bring together eveything that’s required to build websites
+                and apps that accept payments and send payouts globally. We are
+                the best platform.
+              </p>
+              <ul class="feature-group__list">
+                <li class="feature-group__idea">Global Payments</li>
+                <li class="feature-group__idea">One-Click Purchase</li>
+                <li class="feature-group__idea">Friendly Price</li>
+              </ul>
+              <button class="feature-btn btn">Get Started</button>
+            </div>
+            <div
+              class="feature-group"
+              data-aos="fade-up-left"
+              data-aos-duration="1000"
+            >
+              <figure class="feature-group__card">
+                <img
+                  src="./assets/img/Card.png"
+                  alt="One Card For All Your Payments"
+                />
+              </figure>
+              <div class="feature-group__info">
+                <div class="feature-info__icon">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.29138 14.6757V18.5404C7.29138 18.8104 7.4647 19.0495 7.72135 19.1345C7.78551 19.1553 7.85134 19.1653 7.91634 19.1653C8.11132 19.1653 8.29964 19.0737 8.41963 18.9104L10.6803 15.8339L7.29138 14.6757Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M19.7361 0.115899C19.5445 -0.0199247 19.2928 -0.0382567 19.0845 0.0709021L0.335846 9.86187C0.114196 9.97769 -0.0166284 10.2143 0.00170361 10.4635C0.0208689 10.7135 0.18669 10.9268 0.422507 11.0076L5.63463 12.7892L16.7347 3.29817L8.14529 13.6466L16.8805 16.6322C16.9455 16.6539 17.0138 16.6655 17.0821 16.6655C17.1955 16.6655 17.308 16.6347 17.4071 16.5747C17.5654 16.4781 17.6729 16.3156 17.7004 16.1331L19.9919 0.717522C20.0261 0.484206 19.9278 0.252556 19.7361 0.115899Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <div class="feature-info__body">
+                  <div class="feature-info__row">
+                    <span>Send Money</span>
+                    <span><strong>- $600</strong></span>
+                  </div>
+                  <div class="feature-info__row">
+                    <span>Airbnb Payment</span>
+                    <span>- Sep 23</span>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-group__info">
+                <div class="feature-info__icon">
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 15 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.53664 7.16362C10.5116 7.16362 12.1182 5.55681 12.1182 3.58181C12.1182 1.60681 10.5116 0 8.53664 0C6.56164 0 4.95483 1.60681 4.95483 3.58181C4.95483 5.55681 6.56164 7.16362 8.53664 7.16362ZM8.11246 1.47644V1.37916C8.11246 1.14473 8.30221 0.95498 8.53664 0.95498C8.77079 0.95498 8.96083 1.14473 8.96083 1.37916V1.47701C9.46561 1.58532 9.84539 2.03495 9.84539 2.57169C9.84539 2.80584 9.65536 2.99587 9.42121 2.99587C9.18678 2.99587 8.99703 2.80584 8.99703 2.57169C8.99703 2.42209 8.87514 2.30021 8.72555 2.30021H8.3452C8.1956 2.30021 8.07372 2.42209 8.07372 2.57169C8.07372 2.65737 8.11472 2.73882 8.18372 2.78972L8.53664 3.05102L9.39406 3.6856C9.67572 3.89401 9.8454 4.22742 9.84766 4.57808V4.58204C9.84964 4.88123 9.73511 5.16345 9.52471 5.37639C9.36861 5.53447 9.17349 5.64052 8.96083 5.6852V5.78446C8.96083 6.01889 8.77079 6.20864 8.53664 6.20864C8.30221 6.20864 8.11246 6.01889 8.11246 5.78446V5.68661C7.90546 5.6425 7.71514 5.54069 7.5613 5.38855C7.34836 5.17844 7.23016 4.89791 7.22846 4.59872C7.22705 4.36457 7.41567 4.17341 7.64982 4.17199H7.65264C7.88566 4.17199 8.07542 4.36033 8.07683 4.59363C8.07739 4.74003 8.19518 4.86341 8.34972 4.86341C8.5841 4.862 8.4968 4.86251 8.72951 4.86115C8.88006 4.85996 9.00045 4.73777 8.99929 4.58769V4.58373C8.99872 4.4989 8.95772 4.41802 8.88928 4.3674L8.53664 4.10639L7.67895 3.47181C7.39502 3.26141 7.22535 2.92489 7.22535 2.57169C7.22535 2.03382 7.60627 1.5839 8.11246 1.47644Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M2.73287 9.20172C2.62414 9.01322 2.38261 8.94764 2.19294 9.05705L0.197636 10.2088C0.00870463 10.3182 -0.0561107 10.5598 0.0529612 10.749L2.09227 14.2811C2.20143 14.47 2.44293 14.5349 2.6322 14.4258L4.6275 13.2737C4.81672 13.1646 4.88128 12.923 4.77218 12.7338L2.73287 9.20172Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M14.1661 8.49666C13.9741 8.22999 13.6025 8.16976 13.3361 8.36177C12.5279 8.94404 10.976 10.0622 10.8527 10.1513C10.7958 10.1996 10.7362 10.2435 10.674 10.2822C10.4299 10.4357 10.1468 10.5178 9.85133 10.5178H7.81949C7.58534 10.5178 7.3953 10.328 7.3953 10.0936C7.3953 9.85886 7.58562 9.66939 7.81949 9.66939H9.99244C10.3117 9.66939 10.5674 9.40357 10.5541 9.08373C10.5416 8.7803 10.2826 8.54502 9.97887 8.54502H8.32483C8.21285 8.42653 8.09012 8.31794 7.95862 8.22094C7.50644 7.88753 6.94765 7.69043 6.34276 7.69043C5.26731 7.69043 4.19724 8.36799 3.75354 9.27235L5.48874 12.2776H8.74364C9.38275 12.2776 10.0122 12.1141 10.5662 11.7954C10.7582 11.6851 10.9638 11.5525 11.1867 11.3924C12.1204 10.7216 14.0295 9.32806 14.031 9.32721C14.2979 9.13548 14.3584 8.76333 14.1661 8.49666Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <span>Income</span>
+                <span><strong>$1250</strong></span>
+              </div>
+            </div>
+            <div
+              class="feature-group"
+              data-aos="fade-up-right"
+              data-aos-duration="1000"
+            >
+              <figure>
+                <img
+                  src="./assets/img/feature-img1.png"
+                  alt="Transfer and Deposite Your Money Anytime"
+                  class="feature-img"
+                />
+              </figure>
+              <img
+                src="./assets/img/feature-img2.png"
+                alt=""
+                class="feature-img--behind"
+              />
+            </div>
+            <div
+              class="feature-group"
+              data-aos="fade-up-left"
+              data-aos-duration="1000"
+            >
+              <span class="label-top feature-group__label">
+                Digital Smart Wallet
+              </span>
+              <h2 class="feature-group__heading heading--lv2">
+                One Card For All Your Payments
+              </h2>
+              <p class="feature-group__desc">
+                We bring together eveything that’s required to build websites
+                and apps that accept payments and send payouts globally. We are
+                the best platform.
+              </p>
+              <ul class="feature-group__list">
+                <li class="feature-group__idea">Powerfull App</li>
+                <li class="feature-group__idea">Transparency And Speed</li>
+                <li class="feature-group__idea">Multiple Use Capabilities</li>
+              </ul>
+              <button class="feature-btn btn">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================= Feedback =============================================================== -->
+
+      <section class="feedback">
+        <div class="container">
+          <div class="feedback-inner">
+            <div class="feedback-top">
+              <span class="feedback-label label-top"> Our Testimonial </span>
+              <h2 class="feedback-heading heading--lv2">What Clients Says</h2>
+              <p class="feedback-desc">
+                Read what clients says about us and about our online banking
+                services that may inspire you
+              </p>
+            </div>
+            <div
+              class="feedback-list"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <div class="feedback-item">
+                <span class="feedback-item__role"> Businessperson </span>
+                <span class="feedback-item__author"> Alastair Cook </span>
+                <div class="feedback-item__avatar">
+                  <img src="./assets/img/feedback1.png" alt="" />
+                </div>
+                <div class="feedback-quote__wrapper">
+                  <blockquote class="feedback-item__quote">
+                    Fantastic platform for online banking. The best online
+                    banking platform I have used. Payments, loans, and money
+                    transfers have never been so much easier before. I am very
+                    much happy about this great online bank.
+                  </blockquote>
+                </div>
+              </div>
+              <div class="feedback-item">
+                <span class="feedback-item__role"> Businessperson </span>
+                <span class="feedback-item__author"> Alastair Foaks </span>
+                <div class="feedback-item__avatar">
+                  <img src="./assets/img/feedback2.png" alt="" />
+                </div>
+                <div class="feedback-quote__wrapper">
+                  <blockquote class="feedback-item__quote">
+                    Fantastic platform for online banking. The best online
+                    banking platform I have used. Payments, loans, and money
+                    transfers have never been so much easier before. I am very
+                    much happy about this great online bank.
+                  </blockquote>
+                </div>
+              </div>
+              <div class="feedback-item">
+                <span class="feedback-item__role"> Businessperson </span>
+                <span class="feedback-item__author"> Alastair Foaks </span>
+                <div class="feedback-item__avatar">
+                  <img src="./assets/img/feedback2.png" alt="" />
+                </div>
+                <div class="feedback-quote__wrapper">
+                  <blockquote class="feedback-item__quote">
+                    Fantastic platform for online banking. The best online
+                    banking platform I have used. Payments, loans, and money
+                    transfers have never been so much easier before. I am very
+                    much happy about this great online bank.
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="feedback-nav">
+              <button class="feedback-nav__btn feedback-nav--active"></button>
+              <button class="feedback-nav__btn"></button>
+              <button class="feedback-nav__btn"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================= Blog =============================================================== -->
+
+      <section class="blog">
+        <div class="container">
+          <div class="blog-inner">
+            <div class="blog-top">
+              <div class="blog-group">
+                <span class="label-top blog-lable"> Our Blog </span>
+                <h2 class="heading--lv2 blog-heading">Get The Updates</h2>
+                <p class="blog-desc">
+                  Read our blog for the regular updates about us and about our
+                  online banking services that may inspire you
+                </p>
+              </div>
+              <div class="blog-btn btn">Read All</div>
+            </div>
+
+            <div class="blog-list">
+              <article
+                class="blog-item"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                <a href="#">
+                  <figure class="blog-item__thumb">
+                    <img
+                      src="./assets/img/blog1.avif"
+                      alt="Online bank is the best and secure way to save in the future..."
+                    />
+                  </figure>
+                </a>
+                <div class="blog-item__body">
+                  <span class="blog-item__time">July 03, 2022</span>
+                  <a href="#">
+                    <div class="blog-item__heading">
+                      Online bank is the best and secure way to save in the
+                      Online bank is the best and secure way to save in the
+                      Online bank is the best and secure way to save in the
+                      future... Online bank is the best and secure way to save
+                      in the future...
+                    </div>
+                  </a>
+                  <a href="#" class="blog-item__link">Read Blog</a>
+                </div>
+              </article>
+              <article
+                class="blog-item"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <a href="#">
+                  <figure class="blog-item__thumb">
+                    <img
+                      src="./assets/img/blog2.avif"
+                      alt="Online bank is the best and secure way to save in the future..."
+                    />
+                  </figure>
+                </a>
+                <div class="blog-item__body">
+                  <span class="blog-item__time">July 03, 2022</span>
+                  <a href="#">
+                    <div class="blog-item__heading">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Impedit officia nisi vel dolorum beatae eius excepturi
+                      perspiciatis, voluptas voluptate eligendi?
+                    </div>
+                  </a>
+                  <a href="#" class="blog-item__link">Read Blog</a>
+                </div>
+              </article>
+              <article
+                class="blog-item"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                <a href="#">
+                  <figure class="blog-item__thumb">
+                    <img
+                      src="./assets/img/blog3.avif"
+                      alt="Online bank is the best and secure way to save in the future..."
+                    />
+                  </figure>
+                </a>
+                <div class="blog-item__body">
+                  <span class="blog-item__time">July 03, 2022</span>
+                  <a href="#">
+                    <div class="blog-item__heading">
+                      Lorem ipsum dolor sit amet elit. Eum expedita dolorum
+                      praesentium repellat doloremque voluptatum delectus
+                      ratione voluptate inventore veritatis
+                    </div>
+                  </a>
+                  <a href="#" class="blog-item__link">Read Blog</a>
+                </div>
+              </article>
+              <article
+                class="blog-item"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                <a href="#">
+                  <figure class="blog-item__thumb">
+                    <img
+                      src="./assets/img/blog4.avif"
+                      alt="Online bank is the best and secure way to save in the future..."
+                    />
+                  </figure>
+                </a>
+                <div class="blog-item__body">
+                  <span class="blog-item__time">July 03, 2022</span>
+                  <a href="#">
+                    <div class="blog-item__heading">
+                      Online bank is the best and secure way to save in the
+                      Online bank is the best and secure way to save in the
+                      Online bank is the best and secure way to save in the
+                      future... Online bank is the best and secure way to save
+                      in the future...
+                    </div>
+                  </a>
+                  <a href="#" class="blog-item__link">Read Blog</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================= Install =============================================================== -->
+
+      <section class="install">
+        <div class="container">
+          <div class="install-inner">
+            <span class="label-top install-label"> Our App </span>
+            <h2 class="heading--lv2 install-heading">Download the Apps</h2>
+            <p class="install-desc">
+              Download our mobile apps and get started today with a special
+              online bank and move faster
+            </p>
+            <div class="install-cta">
+              <a href="#" class="btn install-link">
+                <svg
+                  width="24"
+                  height="27"
+                  viewBox="0 0 24 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.195023 0.835239C0.069479 1.11306 0 1.45517 0 1.85424V24.6106C0 25.0104 0.0695224 25.3524 0.19514 25.6301L12.5916 13.2318L0.195023 0.835239ZM0.889567 26.3499C1.35039 26.5538 1.95483 26.4942 2.61457 26.12L17.1947 17.8349L13.2987 13.9389L0.889567 26.3499ZM18.0971 17.3231L22.6802 14.7192C24.1176 13.9012 24.1176 12.5646 22.6802 11.7476L18.0949 9.14213L14.0058 13.2318L18.0971 17.3231ZM17.1931 8.62972L2.61457 0.345806C1.95491 -0.0290495 1.35054 -0.0883644 0.88974 0.115742L13.2987 12.5247L17.1931 8.62972Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <div class="install-link__body">
+                  <svg
+                    width="40"
+                    height="7"
+                    viewBox="0 0 40 7"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.24163 3.47575C6.24163 4.33802 5.98645 5.02433 5.47506 5.53675C4.89473 6.14589 4.13742 6.45046 3.20725 6.45046C2.31617 6.45046 1.55784 6.14177 0.935319 5.5244C0.311773 4.906 0 4.14046 0 3.22675C0 2.31201 0.311773 1.54647 0.935319 0.929096C1.55784 0.310695 2.31617 0.00201051 3.20725 0.00201051C3.6497 0.00201051 4.0726 0.088442 4.47389 0.260277C4.87621 0.433141 5.19827 0.662598 5.43904 0.949676L4.89679 1.49296C4.48829 1.00421 3.92545 0.760348 3.20621 0.760348C2.55592 0.760348 1.99411 0.988776 1.51976 1.44563C1.04541 1.90249 0.808756 2.49619 0.808756 3.22572C0.808756 3.95525 1.04541 4.54895 1.51976 5.00581C1.99411 5.46266 2.55592 5.69109 3.20621 5.69109C3.89561 5.69109 4.4708 5.46163 4.93074 5.00169C5.22914 4.70227 5.402 4.28554 5.4483 3.75151H3.20621V3.00964H6.19738C6.22825 3.17119 6.24163 3.32656 6.24163 3.47575Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M10.9852 0.897257H8.1741V2.85433H10.7094V3.5962H8.1741V5.55327H10.9852V6.31264H7.38078V0.138919H10.9852V0.897257Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M14.3302 6.31264H13.5369V0.897257H11.8124V0.138919H16.0547V0.897257H14.3302V6.31264Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M19.1241 6.31264V0.138919H19.9174V6.31264H19.1241Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M23.4355 6.31264H22.6422V0.897257H20.9177V0.138919H25.1601V0.897257H23.4355V6.31264Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M33.1908 5.51519C32.5837 6.13873 31.8295 6.45051 30.9271 6.45051C30.0247 6.45051 29.2705 6.13873 28.6644 5.51519C28.0574 4.89164 27.7548 4.12816 27.7548 3.22577C27.7548 2.32338 28.0574 1.55989 28.6644 0.936347C29.2705 0.312802 30.0247 0 30.9271 0C31.8244 0 32.5776 0.31383 33.1867 0.940462C33.7958 1.56709 34.1004 2.32852 34.1004 3.22577C34.1004 4.12816 33.7969 4.89164 33.1908 5.51519ZM29.2499 4.99762C29.7068 5.46065 30.2655 5.69114 30.9271 5.69114C31.5887 5.69114 32.1485 5.45962 32.6043 4.99762C33.0612 4.5346 33.2906 3.94398 33.2906 3.22577C33.2906 2.50756 33.0612 1.91694 32.6043 1.45391C32.1485 0.990882 31.5887 0.760396 30.9271 0.760396C30.2655 0.760396 29.7068 0.991911 29.2499 1.45391C28.7941 1.91694 28.5646 2.50756 28.5646 3.22577C28.5646 3.94398 28.7941 4.5346 29.2499 4.99762Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M35.2137 6.31264V0.138919H36.1789L39.1793 4.94104H39.2133L39.1793 3.75157V0.138919H39.9727V6.31264H39.1444L36.005 1.27694H35.9711L36.005 2.46641V6.31264H35.2137Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <svg
+                    width="88"
+                    height="18"
+                    viewBox="0 0 88 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M27.8785 4.84019C25.4584 4.84019 23.4858 6.68099 23.4858 9.21633C23.4858 11.7362 25.4584 13.5925 27.8785 13.5925C30.2996 13.5925 32.2721 11.7362 32.2721 9.21633C32.271 6.68099 30.2985 4.84019 27.8785 4.84019ZM27.8785 11.87C26.5521 11.87 25.409 10.7762 25.409 9.21736C25.409 7.64203 26.5532 6.56472 27.8785 6.56472C29.2048 6.56472 30.3479 7.64203 30.3479 9.21736C30.3479 10.7752 29.2048 11.87 27.8785 11.87ZM18.2948 4.84019C15.8747 4.84019 13.9022 6.68099 13.9022 9.21633C13.9022 11.7362 15.8747 13.5925 18.2948 13.5925C20.7159 13.5925 22.6884 11.7362 22.6884 9.21633C22.6884 6.68099 20.7159 4.84019 18.2948 4.84019ZM18.2948 11.87C16.9685 11.87 15.8253 10.7762 15.8253 9.21736C15.8253 7.64203 16.9695 6.56472 18.2948 6.56472C19.6211 6.56472 20.7643 7.64203 20.7643 9.21736C20.7653 10.7752 19.6211 11.87 18.2948 11.87ZM6.89604 6.18401V8.04024H11.3391C11.2063 9.08463 10.8585 9.84708 10.3276 10.377C9.68142 11.0232 8.66996 11.7362 6.89604 11.7362C4.16109 11.7362 2.02292 9.53119 2.02292 6.79623C2.02292 4.06128 4.16109 1.85623 6.89604 1.85623C8.37156 1.85623 9.44888 2.43656 10.2443 3.18255L11.5541 1.87269C10.4428 0.811844 8.96835 9.10633e-07 6.89604 9.10633e-07C3.14962 9.10633e-07 -1.88407e-07 3.04982 -1.88407e-07 6.79623C-1.88407e-07 10.5427 3.14962 13.5925 6.89604 13.5925C8.91794 13.5925 10.4439 12.9288 11.6364 11.6858C12.8629 10.4593 13.2447 8.73478 13.2447 7.34261C13.2447 6.9125 13.2118 6.5143 13.1449 6.18298H6.89604V6.18401ZM53.5158 7.62557C53.1516 6.64807 52.0403 4.84019 49.7694 4.84019C47.515 4.84019 45.6413 6.61411 45.6413 9.21633C45.6413 11.6694 47.4985 13.5925 49.9845 13.5925C51.9899 13.5925 53.1506 12.366 53.6321 11.6529L52.1401 10.6579C51.6431 11.3874 50.963 11.8679 49.9845 11.8679C49.007 11.8679 48.3104 11.4203 47.8628 10.5416L53.7144 8.12152L53.5158 7.62557ZM47.5479 9.08463C47.4985 7.39303 48.8578 6.53179 49.8363 6.53179C50.5988 6.53179 51.2449 6.91354 51.461 7.45991L47.5479 9.08463ZM42.7911 13.328H44.7132V0.465087H42.7911V13.328ZM39.6404 5.81873H39.5746C39.1434 5.30425 38.3141 4.84019 37.2707 4.84019C35.0821 4.84019 33.0767 6.76331 33.0767 9.23382C33.0767 11.6868 35.0821 13.5935 37.2707 13.5935C38.3151 13.5935 39.1434 13.1294 39.5746 12.5995H39.6404V13.2292C39.6404 14.9034 38.7452 15.7985 37.3037 15.7985C36.1265 15.7985 35.397 14.9538 35.0986 14.2407L33.4245 14.9373C33.905 16.0969 35.1809 17.5231 37.3037 17.5231C39.5581 17.5231 41.4647 16.1967 41.4647 12.9638V5.10669H39.6414V5.81873H39.6404ZM37.4364 11.87C36.1101 11.87 34.9998 10.7587 34.9998 9.23382C34.9998 7.69142 36.1101 6.56472 37.4364 6.56472C38.7452 6.56472 39.7731 7.69142 39.7731 9.23382C39.7731 10.7587 38.7452 11.87 37.4364 11.87ZM62.5233 0.465087H57.9228V13.328H59.8418V8.45491H62.5223C64.6501 8.45491 66.743 6.91456 66.743 4.46051C66.743 2.00646 64.6512 0.465087 62.5233 0.465087ZM62.5727 6.66453H59.8418V2.25547H62.5727C64.0081 2.25547 64.823 3.44391 64.823 4.46051C64.823 5.45654 64.0081 6.66453 62.5727 6.66453ZM74.4386 4.81756C73.0485 4.81756 71.6089 5.42979 71.0132 6.78698L72.7171 7.49798C73.0814 6.78697 73.7605 6.55443 74.4715 6.55443C75.4644 6.55443 76.4738 7.1502 76.4903 8.20899V8.34172C76.1425 8.14313 75.3976 7.84577 74.488 7.84577C72.6513 7.84577 70.7806 8.85517 70.7806 10.7412C70.7806 12.4627 72.287 13.5709 73.9745 13.5709C75.2648 13.5709 75.9769 12.9916 76.4234 12.3125H76.4893V13.3054H78.3435V8.37362C78.3445 6.0914 76.6385 4.81756 74.4386 4.81756ZM74.206 11.8669C73.5784 11.8669 72.7007 11.5521 72.7007 10.7742C72.7007 9.78123 73.7934 9.40051 74.737 9.40051C75.5797 9.40051 75.9779 9.58264 76.4903 9.83062C76.3411 11.0232 75.3152 11.8669 74.206 11.8669ZM85.0954 5.09846L82.8945 10.6754H82.8287L80.5444 5.09846H78.4762L81.9016 12.8928L79.9486 17.2288H81.951L87.2305 5.09846H85.0954ZM67.8028 13.328H69.7219V0.465087H67.8028V13.328Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </a>
+              <a href="#" class="btn install-link">
+                <svg
+                  width="20"
+                  height="25"
+                  viewBox="0 0 20 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.521 12.9293C16.5452 11.0525 17.5531 9.27663 19.1521 8.29361C18.1434 6.85298 16.4538 5.93958 14.696 5.88458C12.8212 5.68779 11.0036 7.00646 10.0482 7.00646C9.0743 7.00646 7.60333 5.90412 6.01933 5.93671C3.95467 6.00342 2.02988 7.17727 1.02537 8.98234C-1.13391 12.7208 0.47672 18.2151 2.54514 21.237C3.58001 22.7167 4.78948 24.3696 6.37204 24.311C7.92068 24.2468 8.49907 23.3235 10.3684 23.3235C12.2204 23.3235 12.763 24.311 14.3777 24.2738C16.0395 24.2468 17.0865 22.7874 18.085 21.2937C18.8286 20.2393 19.4007 19.074 19.7803 17.841C17.8274 17.015 16.5233 15.0497 16.521 12.9293Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M13.4711 3.89723C14.3772 2.80954 14.8236 1.4115 14.7155 0C13.3312 0.14539 12.0526 0.806974 11.1343 1.85293C10.2363 2.87489 9.76899 4.24834 9.85733 5.60589C11.2421 5.62014 12.6034 4.97649 13.4711 3.89723Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <div class="install-link__body">
+                  <svg
+                    width="78"
+                    height="8"
+                    viewBox="0 0 78 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0.329004V7.01567H2.41424C4.4068 7.01567 5.56063 5.78769 5.56063 3.65148C5.56063 1.54771 4.39753 0.329004 2.41424 0.329004H0ZM1.03798 1.27431H2.29839C3.68392 1.27431 4.50411 2.15475 4.50411 3.66538C4.50411 5.19919 3.69782 6.07036 2.29839 6.07036H1.03798V1.27431Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M9.09441 7.11298C10.568 7.11298 11.4716 6.12596 11.4716 4.49021C11.4716 2.86373 10.5633 1.87208 9.09441 1.87208C7.62085 1.87208 6.71261 2.86373 6.71261 4.49021C6.71261 6.12596 7.61621 7.11298 9.09441 7.11298ZM9.09441 6.22791C8.22788 6.22791 7.74133 5.59307 7.74133 4.49021C7.74133 3.39662 8.22788 2.75715 9.09441 2.75715C9.95631 2.75715 10.4475 3.39662 10.4475 4.49021C10.4475 5.58844 9.95631 6.22791 9.09441 6.22791Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M19.1666 1.96939H18.1703L17.2713 5.82013H17.1926L16.1546 1.96939H15.2L14.162 5.82013H14.0879L13.1843 1.96939H12.1741L13.5642 7.01567H14.5883L15.6263 3.29931H15.7051L16.7477 7.01567H17.781L19.1666 1.96939Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M20.3139 7.01567H21.3102V4.0639C21.3102 3.27614 21.7782 2.78495 22.515 2.78495C23.2518 2.78495 23.604 3.1881 23.604 3.99902V7.01567H24.6002V3.74879C24.6002 2.54862 23.9793 1.87208 22.8533 1.87208C22.0933 1.87208 21.5929 2.21035 21.3473 2.77105H21.2731V1.96939H20.3139V7.01567Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M26.1693 7.01567H27.1655V0H26.1693V7.01567Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M30.9125 7.11298C32.3861 7.11298 33.2897 6.12596 33.2897 4.49021C33.2897 2.86373 32.3814 1.87208 30.9125 1.87208C29.4389 1.87208 28.5307 2.86373 28.5307 4.49021C28.5307 6.12596 29.4343 7.11298 30.9125 7.11298ZM30.9125 6.22791C30.046 6.22791 29.5594 5.59307 29.5594 4.49021C29.5594 3.39662 30.046 2.75715 30.9125 2.75715C31.7744 2.75715 32.2656 3.39662 32.2656 4.49021C32.2656 5.58844 31.7744 6.22791 30.9125 6.22791Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M36.2581 6.26035C35.7159 6.26035 35.3221 5.99622 35.3221 5.5421C35.3221 5.09725 35.6372 4.86092 36.3322 4.81458L37.5649 4.73581V5.15749C37.5649 5.78306 37.0088 6.26035 36.2581 6.26035ZM36.0032 7.09907C36.6659 7.09907 37.2173 6.81178 37.5185 6.30668H37.5973V7.01567H38.5565V3.56807C38.5565 2.50228 37.8429 1.87208 36.5778 1.87208C35.4333 1.87208 34.6177 2.42814 34.5158 3.29468H35.4796C35.5908 2.93787 35.9754 2.73398 36.5315 2.73398C37.2127 2.73398 37.5649 3.03518 37.5649 3.56807V4.00366L36.1979 4.08243C34.9977 4.15657 34.3212 4.6802 34.3212 5.58844C34.3212 6.51057 35.0301 7.09907 36.0032 7.09907Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M41.9374 7.09907C42.6324 7.09907 43.2209 6.77007 43.5221 6.21864H43.6009V7.01567H44.5555V0H43.5592V2.77105H43.4851C43.2117 2.21499 42.6278 1.88598 41.9374 1.88598C40.6631 1.88598 39.8429 2.89616 39.8429 4.49021C39.8429 6.08889 40.6538 7.09907 41.9374 7.09907ZM42.22 2.78032C43.0541 2.78032 43.5778 3.44296 43.5778 4.49484C43.5778 5.55137 43.0588 6.20474 42.22 6.20474C41.3767 6.20474 40.8716 5.56063 40.8716 4.49021C40.8716 3.42906 41.3813 2.78032 42.22 2.78032Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M51.016 7.11298C52.4896 7.11298 53.3932 6.12596 53.3932 4.49021C53.3932 2.86373 52.485 1.87208 51.016 1.87208C49.5425 1.87208 48.6342 2.86373 48.6342 4.49021C48.6342 6.12596 49.5378 7.11298 51.016 7.11298ZM51.016 6.22791C50.1495 6.22791 49.6629 5.59307 49.6629 4.49021C49.6629 3.39662 50.1495 2.75715 51.016 2.75715C51.8779 2.75715 52.3691 3.39662 52.3691 4.49021C52.3691 5.58844 51.8779 6.22791 51.016 6.22791Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M54.712 7.01567H55.7083V4.0639C55.7083 3.27614 56.1763 2.78495 56.9131 2.78495C57.6499 2.78495 58.002 3.1881 58.002 3.99902V7.01567H58.9983V3.74879C58.9983 2.54862 58.3774 1.87208 57.2514 1.87208C56.4914 1.87208 55.9909 2.21035 55.7453 2.77105H55.6712V1.96939H54.712V7.01567Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M63.5868 0.713615V1.99256H62.7851V2.83129H63.5868V5.68111C63.5868 6.65422 64.027 7.04347 65.1345 7.04347C65.3291 7.04347 65.5145 7.0203 65.6766 6.9925V6.16303C65.5376 6.17694 65.4496 6.1862 65.2967 6.1862C64.8008 6.1862 64.583 5.95451 64.583 5.42625V2.83129H65.6766V1.99256H64.583V0.713615H63.5868Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M67.014 7.01567H68.0102V4.06853C68.0102 3.30394 68.4644 2.78958 69.2799 2.78958C69.9843 2.78958 70.3596 3.19736 70.3596 4.00366V7.01567H71.3559V3.75806C71.3559 2.55789 70.6933 1.87671 69.6182 1.87671C68.8582 1.87671 68.3253 2.21499 68.0798 2.78032H68.001V0H67.014V7.01567Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M74.9499 2.72008C75.6867 2.72008 76.1686 3.23443 76.1918 4.02682H73.6432C73.6988 3.23907 74.2131 2.72008 74.9499 2.72008ZM76.1872 5.65331C76.0018 6.04719 75.5894 6.26498 74.987 6.26498C74.19 6.26498 73.6756 5.70428 73.6432 4.81922V4.76361H77.2066V4.41607C77.2066 2.83129 76.3586 1.87208 74.9545 1.87208C73.532 1.87208 72.6283 2.89616 72.6283 4.50875C72.6283 6.12133 73.5134 7.11298 74.9592 7.11298C76.113 7.11298 76.9193 6.55691 77.1464 5.65331H76.1872Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <svg
+                    width="84"
+                    height="18"
+                    viewBox="0 0 84 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M52.557 1.59315V4.15105H50.9537V5.8285H52.557V11.5282C52.557 13.4744 53.4375 14.2529 55.6525 14.2529C56.0417 14.2529 56.4124 14.2065 56.7368 14.1509V12.492C56.4587 12.5198 56.2827 12.5383 55.9768 12.5383C54.9852 12.5383 54.5496 12.0749 54.5496 11.0184V5.8285H56.7368V4.15105H54.5496V1.59315H52.557Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M62.3793 14.3919C65.3265 14.3919 67.1337 12.4179 67.1337 9.14635C67.1337 5.89338 65.3172 3.91008 62.3793 3.91008C59.4322 3.91008 57.6157 5.89338 57.6157 9.14635C57.6157 12.4179 59.4229 14.3919 62.3793 14.3919ZM62.3793 12.6217C60.6463 12.6217 59.6732 11.3521 59.6732 9.14635C59.6732 6.95916 60.6463 5.68022 62.3793 5.68022C64.1031 5.68022 65.0855 6.95916 65.0855 9.14635C65.0855 11.3428 64.1031 12.6217 62.3793 12.6217Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M68.6799 14.1973H70.6725V8.23811C70.6725 6.82015 71.7382 5.86557 73.2489 5.86557C73.6011 5.86557 74.1942 5.93045 74.361 5.98605V4.0213C74.1479 3.96569 73.7679 3.93789 73.4713 3.93789C72.1553 3.93789 71.0339 4.66077 70.7466 5.65242H70.5983V4.10471H68.6799V14.1973Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M79.3085 5.60608C80.7821 5.60608 81.7459 6.63479 81.7922 8.21957H76.695C76.8062 6.64406 77.8349 5.60608 79.3085 5.60608ZM81.783 11.4725C81.4123 12.2603 80.5874 12.6959 79.3826 12.6959C77.7886 12.6959 76.7599 11.5745 76.695 9.80435V9.69314H83.8219V8.99806C83.8219 5.8285 82.1259 3.91008 79.3178 3.91008C76.4726 3.91008 74.6654 5.95825 74.6654 9.18342C74.6654 12.4086 76.4355 14.3919 79.327 14.3919C81.6347 14.3919 83.2473 13.2797 83.7014 11.4725H81.783Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M39.4901 10.4702C39.6438 12.9485 41.709 14.5335 44.7829 14.5335C48.068 14.5335 50.1237 12.8717 50.1237 10.2205C50.1237 8.13605 48.9518 6.98336 46.1085 6.32056L44.5812 5.94594C42.7753 5.52329 42.0452 4.95655 42.0452 3.96716C42.0452 2.71842 43.1787 1.90193 44.8789 1.90193C46.4927 1.90193 47.607 2.69921 47.8087 3.97677H49.9027C49.7779 1.64258 47.7222 0 44.9077 0C41.8819 0 39.8647 1.64258 39.8647 4.11125C39.8647 6.14766 41.0078 7.35798 43.5149 7.94393L45.3016 8.37619C47.1363 8.80844 47.9432 9.44242 47.9432 10.4991C47.9432 11.7286 46.6752 12.6219 44.9462 12.6219C43.0923 12.6219 41.8051 11.7862 41.6226 10.4702H39.4901Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M18.8492 3.93789C17.4776 3.93789 16.2913 4.6237 15.6797 5.7729H15.5314V4.10471H13.613V17.5522H15.6055V12.6681H15.7631C16.2913 13.7339 17.4313 14.3641 18.8678 14.3641C21.4164 14.3641 23.0382 12.353 23.0382 9.14635C23.0382 5.93972 21.4164 3.93789 18.8492 3.93789ZM18.2839 12.5754C16.6157 12.5754 15.5685 11.2594 15.5685 9.15561C15.5685 7.04257 16.6157 5.72656 18.2932 5.72656C19.9799 5.72656 20.9901 7.01477 20.9901 9.14635C20.9901 11.2872 19.9799 12.5754 18.2839 12.5754Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M30.0105 3.93789C28.6389 3.93789 27.4526 4.6237 26.841 5.7729H26.6927V4.10471H24.7743V17.5522H26.7668V12.6681H26.9244C27.4526 13.7339 28.5926 14.3641 30.0291 14.3641C32.5777 14.3641 34.1996 12.353 34.1996 9.14635C34.1996 5.93972 32.5777 3.93789 30.0105 3.93789ZM29.4452 12.5754C27.777 12.5754 26.7298 11.2594 26.7298 9.15561C26.7298 7.04257 27.777 5.72656 29.4545 5.72656C31.1412 5.72656 32.1514 7.01477 32.1514 9.14635C32.1514 11.2872 31.1412 12.5754 29.4452 12.5754Z"
+                      fill="currentColor"
+                    />
+                    <path
+                      d="M10.038 14.1973H12.3241L7.31956 0.3362H5.00458L0 14.1973H2.20932L3.48688 10.5183H8.77002L10.038 14.1973ZM6.0516 2.8529H6.2149L8.2225 8.71239H4.0344L6.0516 2.8529Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </a>
+            </div>
+            <div class="install-deco">
+              <svg
+                width="154"
+                height="154"
+                viewBox="0 0 154 154"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M77 0L87.8894 66.1106L154 77L87.8894 87.8894L77 154L66.1106 87.8894L0 77L66.1106 66.1106L77 0Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <div class="install-deco">
+              <svg
+                width="154"
+                height="154"
+                viewBox="0 0 154 154"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M77 0L66.1106 66.1106L0 77L66.1106 87.8894L77 154L87.8894 87.8894L154 77L87.8894 66.1106L77 0Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <div class="install-deco">
+              <svg
+                width="154"
+                height="154"
+                viewBox="0 0 154 154"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M77 0L87.8894 66.1106L154 77L87.8894 87.8894L77 154L66.1106 87.8894L0 77L66.1106 66.1106L77 0Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <div class="install-deco">
+              <svg
+                width="154"
+                height="154"
+                viewBox="0 0 154 154"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M77 0L66.1106 66.1106L0 77L66.1106 87.8894L77 154L87.8894 87.8894L154 77L87.8894 66.1106L77 0Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-inner">
+            <a href="#" class="footer-logo logo">
+              <img src="./assets/img/logo.svg" alt="CeloBank" />
+              <span>CeloBank</span>
+            </a>
+            <div class="footer-group">
+              <span class="footer-group__title">Sitemap</span>
+              <a href="#" class="footer-link">Home</a>
+              <a href="#" class="footer-link">About</a>
+              <a href="#" class="footer-link">Growers</a>
+              <a href="#" class="footer-link">Merchants</a>
+              <a href="#" class="footer-link">Contact</a>
+            </div>
+            <div class="footer-group">
+              <span class="footer-group__title">Socials</span>
+              <a href="#" class="footer-link">Facebook</a>
+              <a href="#" class="footer-link">Linkedin</a>
+              <a href="#" class="footer-link">Instagram</a>
+              <a href="#" class="footer-link">Twitter</a>
+            </div>
+            <div class="footer-group">
+              <div class="footer-row">
+                <span class="footer-group__title">Head Office</span>
+                <a href="#" class="footer-link footer-address__link">
+                  Xilliams Corner Wine © 2017. 1112 A Market St # Ste B22,
+                  Charlottesville, CA 45565
+                </a>
+              </div>
+              <div class="footer-row">
+                <span class="footer-group__title">News letter</span>
+                <form action="#" class="subscribe-form">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="subscribe-input"
+                    placeholder="Email address..."
+                  />
+                  <button class="btn footer-btn">Subscribe</button>
+                </form>
+              </div>
+            </div>
+            <div class="footer-group">
+              <a href="#" class="footer-link">email@gmail.com</a>
+            </div>
+            <div class="footer-group">
+              <a href="#" class="footer-link">(123) 456-7890</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2020 Ligft Media All rights reserved.</span>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      const input = document.querySelector(".hero-form");
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") e.preventDefault();
+        return;
+      });
+    </script>
+  </body>
 </html>
