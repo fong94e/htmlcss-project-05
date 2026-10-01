@@ -893,14 +893,18 @@
               <div class="footer-row">
                 <span class="footer-group__title">News letter</span>
                 <form action="#" class="subscribe-form">
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    class="subscribe-input"
-                    placeholder="Email address..."
-                  />
-                  <button class="btn footer-btn">Subscribe</button>
+                  <div class="subscribe-form__row">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="subscribe-input"
+                      placeholder="Email address..."
+                      required
+                    />
+                    <button class="btn footer-btn">Subscribe</button>
+                  </div>
+                  <p class="subscribe-form__error">Email không hợp lệ</p>
                 </form>
               </div>
             </div>
@@ -920,11 +924,14 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
-      const input = document.querySelector(".hero-form");
-      input.addEventListener("keydown", (e) => {
+      function noSubmit(e) {
         if (e.key === "Enter") e.preventDefault();
         return;
-      });
+      }
+      const inputHero = document.querySelector(".hero-form");
+      const inputFooter = document.querySelector(".subscribe-form");
+      inputHero.addEventListener("keydown", (e) => noSubmit(e));
+      inputFooter.addEventListener("keydown", (e) => noSubmit(e));
     </script>
   </body>
 </html>

@@ -245,6 +245,7 @@ a {
   margin: 8px;
 }
 
+.subscribe-form__error,
 .hero-form__error {
   display: inline-block;
   margin: 16px auto 16px 23px;
@@ -255,10 +256,12 @@ a {
   opacity: 0;
 }
 
+.subscribe-form__row:has(:invalid:not(:placeholder-shown))
+  ~ .subscribe-form__error,
 .hero-form__row:has(:invalid:not(:placeholder-shown)) ~ .hero-form__error {
   opacity: 1;
 }
-
+.subscribe-form__row:not(:invalid) .footer-btn,
 .hero-form__row:not(:invalid) .hero-btn {
   opacity: 0.9;
   pointer-events: none;
@@ -1134,7 +1137,6 @@ a {
   grid-template-columns: 1fr 1fr 1fr 2fr;
   grid-template-rows: 1fr 30px;
   row-gap: 54px;
-  column-gap: 163px;
 }
 
 .footer-logo {
@@ -1187,18 +1189,23 @@ a {
 
 .subscribe-form {
   margin-top: 24px;
-  display: flex;
   /* justify-content: space-between; */
+}
+.subscribe-form__row {
+  display: flex;
 }
 
 .subscribe-input {
-  width: 270px;
-  height: 52px;
+  width: 100%;
   padding-left: 12px;
   outline: transparent;
   border-radius: 6px;
   border: 1px solid #8e919a;
   background-color: transparent;
+}
+
+.subscribe-form__error {
+  margin-left: 0;
 }
 
 .subscribe-input::placeholder {
@@ -1214,6 +1221,8 @@ a {
 .footer-btn {
   background: #7264d6;
   float: right;
+  flex-shrink: 0;
+  margin-left: 20px;
 }
 
 .footer-group:nth-of-type(4) .footer-link,
