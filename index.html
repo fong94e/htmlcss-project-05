@@ -908,10 +908,14 @@
               </div>
             </div>
             <div class="footer-group">
-              <a href="#" class="footer-link">email@gmail.com</a>
+              <a href="mailto:email@gmail.com" class="footer-link"
+                >email@gmail.com</a
+              >
             </div>
             <div class="footer-group">
-              <a href="#" class="footer-link">(123) 456-7890</a>
+              <a href="telto:(123) 456-7890" class="footer-link"
+                >(123) 456-7890</a
+              >
             </div>
           </div>
         </div>
@@ -929,8 +933,14 @@
       }
       const inputHero = document.querySelector(".hero-form");
       const inputFooter = document.querySelector(".subscribe-form");
+      const header = document.querySelector(".header");
       inputHero.addEventListener("keydown", (e) => noSubmit(e));
       inputFooter.addEventListener("keydown", (e) => noSubmit(e));
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 100)
+          header.style.boxShadow = "0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1)";
+        else header.style.boxShadow = "";
+      });
     </script>
   </body>
 </html>

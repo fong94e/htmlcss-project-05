@@ -30,6 +30,7 @@ button {
 
 a {
   text-decoration: none;
+  padding: 20px;
 }
 
 .btn {
@@ -78,7 +79,7 @@ a {
 
 .header {
   position: sticky;
-  top: 0;
+  top: -22px;
   z-index: 99;
   padding-top: 42px;
   padding-bottom: 20px;
@@ -108,7 +109,7 @@ a {
   display: flex;
   align-items: center;
   margin-right: 15%;
-  gap: 47px;
+  gap: 27px;
 }
 
 .header-cta {
@@ -261,8 +262,8 @@ a {
 .hero-form__row:has(:invalid:not(:placeholder-shown)) ~ .hero-form__error {
   opacity: 1;
 }
-.subscribe-form__row:not(:invalid) .footer-btn,
-.hero-form__row:not(:invalid) .hero-btn {
+.subscribe-form__row:has(:invalid) .footer-btn,
+.hero-form__row:has(:invalid) .hero-btn {
   opacity: 0.9;
   pointer-events: none;
 }
@@ -1157,6 +1158,8 @@ a {
 }
 
 .footer-link {
+  padding: 10px;
+  margin: -10px;
   color: #6a6e78;
   font-family: "Open Sans";
   font-size: 18px;
