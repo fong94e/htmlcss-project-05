@@ -31,6 +31,7 @@ button {
 a {
   text-decoration: none;
   padding: 20px;
+  margin: -20px;
 }
 
 .btn {
@@ -109,11 +110,12 @@ a {
   display: flex;
   align-items: center;
   margin-right: 15%;
-  gap: 27px;
+  gap: 47px;
 }
 
 .header-cta {
   display: flex;
+  align-items: center;
 }
 
 .header-nav__link:not(.header-nav__link--active):hover {
@@ -140,16 +142,17 @@ a {
 .header-nav__link--active::after {
   position: absolute;
   bottom: -10px;
-  left: 0;
+  left: 20px;
   content: "";
   display: inline-block;
-  width: 100%;
+  width: calc(100% - 40px);
   height: 1px;
   border-radius: 0.5px;
   background: #7264d6;
 }
 
 .login-btn {
+  margin-right: 0;
   background-color: transparent;
   color: rgba(33, 40, 50, 1);
 }
@@ -1041,6 +1044,9 @@ a {
 
 /* ================================================================= Install  =====================================================================*/
 
+.install {
+  margin-bottom: 100px;
+}
 .install-inner {
   position: relative;
   display: flex;
@@ -1088,6 +1094,8 @@ a {
 }
 
 .install-link {
+  margin: 0;
+  padding: 0;
   width: 182px;
   height: 64px;
   color: rgba(114, 100, 214, 1);
@@ -1129,7 +1137,7 @@ a {
 /* ================================================================= Footer  =====================================================================*/
 
 .footer {
-  margin-top: 100px;
+  padding-top: 60px;
   background: #fafbff;
 }
 
@@ -1230,8 +1238,7 @@ a {
 
 .footer-group:nth-of-type(4) .footer-link,
 .footer-group:nth-of-type(5) .footer-link {
-  margin: 0;
-  /* white-space: nowrap; */
+  margin: -10px;
 }
 
 .footer-group:nth-of-type(5) {
